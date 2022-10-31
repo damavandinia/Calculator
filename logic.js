@@ -19,8 +19,6 @@ function handleNumBtn(btnType){
 
     calItems.push(currentNumber);
 
-    console.log(calItems);
-
     lastAction = 'number';
 
     printResult();
@@ -39,8 +37,6 @@ function buttonAction(btnType){
             calItems = [];
             currentNumber = '';
             lastAction = 'clean';
-
-            console.log(calItems);
 
             document.getElementById("logicTxt").style.fontSize = 50+'px';
             printResult();
@@ -74,8 +70,6 @@ function buttonAction(btnType){
                 lastAction = 'clean';
             }
 
-            console.log(calItems);
-
             printResult();
             return;
 
@@ -88,8 +82,6 @@ function buttonAction(btnType){
             calItems.splice(-1);
             calItems.push(parseFloat(currentNumber));
 
-            console.log(calItems);
-
             printResult();
             return;
 
@@ -99,8 +91,6 @@ function buttonAction(btnType){
 
     currentNumber = '';
     calItems.push(btnType);
-
-    console.log(calItems);
 
     // lastAction = btnType !== 'delete' ? 'logic' : 'clean';
 
@@ -116,7 +106,6 @@ function calculate(){
     const logicPhrase = getLogicPhrase();
 
     let result = evil(logicPhrase);
-    console.log(result);
 
     currentNumber = result.toString();
     calItems = [currentNumber];
@@ -125,8 +114,6 @@ function calculate(){
     document.getElementById("resultTxt").innerText = '= ' + result.toString();
     document.getElementById("resultTxt").classList.add("calResultTxt");
     document.getElementById("logicTxt").classList.remove("calResultTxt");
-
-    console.log(calItems);
 }
 
 function evil(fn) {
@@ -141,8 +128,6 @@ function getLogicPhrase(){
 
         logicPhrase += item;
     }
-
-    console.log(logicPhrase);
 
     return logicPhrase;
 }
