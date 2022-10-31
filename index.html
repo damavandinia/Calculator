@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="/style.css?500">
+</head>
+
+<body>
+<div class="mainWrapper">
+
+    <div class="calWrapper">
+
+        <div class="calTop">
+
+            <div class="calMainTxt" id="logicTxt">0</div>
+
+            <div class="calMainTxt" id="resultTxt"></div>
+
+        </div>
+
+        <div class="calBtnsWrapper">
+
+            <div class="calBtnsRawWrapper">
+                <button class="calBtn" onclick="buttonAction('ac')">AC</button>
+                <button class="calBtn calBtnIc fa-solid fa-delete-left" onclick="buttonAction('delete')"></button>
+                <button class="calBtn calBtnIc fa-solid fa-percent" onclick="buttonAction('percent')"></button>
+                <button class="calBtn calBtnIc fa-solid fa-divide" onclick="buttonAction('/')"></button>
+            </div>
+
+            <div class="calBtnsRawWrapper">
+                <button class="calBtn" onclick="handleNumBtn('7')">7</button>
+                <button class="calBtn" onclick="handleNumBtn('8')">8</button>
+                <button class="calBtn" onclick="handleNumBtn('9')">9</button>
+                <button class="calBtn calBtnIc fa-solid fa-xmark" onclick="buttonAction('*')"></button>
+            </div>
+
+            <div class="calBtnsRawWrapper">
+                <button class="calBtn" onclick="handleNumBtn('4')">4</button>
+                <button class="calBtn" onclick="handleNumBtn('5')">5</button>
+                <button class="calBtn" onclick="handleNumBtn('6')">6</button>
+                <button class="calBtn calBtnIc fa-solid fa-minus" onclick="buttonAction('-')"></button>
+            </div>
+
+            <div class="calBtnsRawWrapper">
+                <button class="calBtn" onclick="handleNumBtn('1')">1</button>
+                <button class="calBtn" onclick="handleNumBtn('2')">2</button>
+                <button class="calBtn" onclick="handleNumBtn('3')">3</button>
+                <button class="calBtn calBtnIc fa-solid fa-plus" onclick="buttonAction('+')"></button>
+            </div>
+
+            <div class="calBtnsRawWrapper">
+                <button class="calBtn" onclick="handleNumBtn('0')">0</button>
+                <button class="calBtn" onclick="handleNumBtn('.')">.</button>
+                <button class="calBtn calEqualBtn fa-solid fa-equals" onclick="buttonAction('equal')"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/logic.js?200"></script>
+
+</body>
+</html>

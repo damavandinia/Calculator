@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Trirong", serif;
+}
+
+.mainWrapper {
+    height: 100%;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+    background: #cccccc;
+}
+
+.calWrapper {
+    width: 350px;
+    height: 580px;
+    border-radius: 30px;
+    margin-top: 15%;
+    overflow: hidden;
+    transform: translateY(-15%);
+    background: #eeeeef;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.18);
+}
+
+.calTop{
+    height: 150px;
+    text-align: right;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.calMainTxt{
+    font-size: 30px;
+    color: #a1a1a1;
+    line-height: 25px;
+    transition: .3s ease;
+}
+
+.calResultTxt{
+    font-size: 50px;
+    color: #444444;
+    line-height: 50px;
+    transition: .3s ease;
+}
+
+.calBtnsWrapper{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #dedede;
+}
+
+.calBtnsRawWrapper{
+    display: flex;
+    height: 70px;
+    margin-top: 6px;
+    align-items: center;
+}
+
+.calBtn{
+    display: inline-block;
+    padding: 0;
+    line-height: 60px;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06) , -2px -2px 10px rgba(255, 255, 255, 0.78);
+    border: none;
+    background: #eeeeef;
+    color: #101010;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.calBtn:hover{
+    transform: scale(0.93);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.03);
+    color: #0087f3;
+    text-shadow: 0 0 8px rgba(0, 135, 243, 0.43);
+}
+
+.calBtn:active{
+    box-shadow: inset 2px 2px 2px rgba(49, 49, 49, 0.1);
+}
+
+.calBtnIc{
+    font-size: 26px;
+    color: #0087f3;
+}
+
+.calEqualBtn{
+    flex: 1;
+    border-radius: 100px;
+    background: #0087f3;
+    box-shadow: 5px 5px 10px rgba(0, 135, 243, 0.15), -2px -2px 10px rgb(255, 255, 255);
+    color: #fff;
+}
+.calEqualBtn:hover{
+    color: #ffffff;
+}
